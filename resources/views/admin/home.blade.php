@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.select')
 
 @section('content')
     <div class="content">
-<div class="mori">もりもりも～りもり</div>
+<div class="mori"></div>
 
         {{-- <img class="mori" src="{{ asset('img/mori.png') }}" alt="mori"> --}}
                     {{-- <div class="panel-heading">

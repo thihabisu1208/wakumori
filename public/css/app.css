@@ -5940,29 +5940,67 @@ readers do not read off random characters that represent icons */
   z-index: -100;
 }
 
+.navbar-toggler {
+  display: none;
+}
+
 #app {
   position: relative;
 }
 
-#app div.container {
-  background-color: #FFEBB7;
-  font-size: 1.5rem;
-  position: fixed;
+#app .selectNav {
+  position: absolute;
   top: 0;
-  left: 0;
-  height: 10vh;
   width: 100vw;
-  z-index: 100;
 }
 
-#app div.container .navbar-nav {
+#app .selectNav ul {
+  font-size: 2rem;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 5vh 0 0;
 }
 
-.navbar-toggler {
-  display: none;
+#app .selectNav ul li.logoutBtn {
+  background-color: #FFB190;
+  float: right;
+  height: 80px;
+  width: 6vw;
+  margin: 0 1vw 0 0;
+  padding: 0 10px 0;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+#app .selectNav ul li.logoutBtn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#app .selectNav ul li.recordBtn {
+  background-color: #FFB190;
+  color: #fff;
+  float: right;
+  height: 80px;
+  width: 4vw;
+  margin: 0 2vw 0 0;
+  padding: 0 10px 0;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+#app .selectNav ul li.recordBtn img {
+  height: 70%;
 }
 
 html,
