@@ -5930,6 +5930,41 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
+.mori {
+  width: 100vw;
+  height: 100vh;
+  background: url("/img/mori.png") 100% center;
+  background-size: cover;
+  font-size: 1.3rem;
+  overflow: hidden;
+  z-index: -100;
+}
+
+#app {
+  position: relative;
+}
+
+#app div.container {
+  background-color: #FFEBB7;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+  z-index: 100;
+}
+
+#app div.container .navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
 html,
 body {
   margin: 0px;
@@ -5990,8 +6025,6 @@ h2 {
 
 .slide-fade-enter,
 .slide-fade-leave-to {
-  -webkit-transform: scale(1);
-          transform: scale(1);
   opacity: 0;
 }
 

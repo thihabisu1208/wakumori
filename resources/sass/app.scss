@@ -17,6 +17,8 @@
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
+@import 'wakaolian';
+
 html, body{
   @include marginPadding;
   font-size: 62.5%;
@@ -69,11 +71,16 @@ h2{
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: scale(1);
+  // transform: scale(1);
   opacity: 0;
 }
 
 // Top
+//div.containerのposition:fixedを直そうとしたときに記述
+// #app{
+//   position: relative;
+// }
+
 #top{
   position: relative;
   width: 100vw;
