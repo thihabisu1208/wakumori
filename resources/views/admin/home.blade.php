@@ -4,19 +4,11 @@
     <div class="content">
 <div class="mori"></div>
 
-        {{-- <img class="mori" src="{{ asset('img/mori.png') }}" alt="mori"> --}}
-                    {{-- <div class="panel-heading">
-                        Admin Dashboard
-                    </div>
-                    <div class="panel-body">
-                        @if (session('status'))
-                            <div class="alert alert-success">
-                                {{ session('status') }}
-                            </div>
-                        @endif
+<img class="selectUsagi" src="img/yasiUsagi.png" alt="ヤシとウサギ">
 
-                        This is Admin Dashboard. You must be privileged to be here !
-                    </div> --}}
+<img class="selectKuma" src="img/baobabuKuma.png" alt="バオバブとクマ">
+
+<img class="selectRisu" src="img/bananaRisu.png" alt="バナナとリス">
 
     </div>
 

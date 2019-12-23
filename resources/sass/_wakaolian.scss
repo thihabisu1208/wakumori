@@ -79,3 +79,26 @@
         }
     }
 }
+
+//home.blade.php ゲーム選択のCSS
+
+//usagi
+img.selectUsagi{
+    position: absolute;
+    width: 23vw;
+    left: 12vw;
+    bottom: 200px;
+}
+img.selectKuma{
+    position: absolute;
+    width: 23vw;
+    left: 39vw;
+    bottom: 200px;
+}
+img.selectRisu{
+    position: absolute;
+    width: 23vw;
+    left: 66vw;
+    bottom: 200px;
+
+}

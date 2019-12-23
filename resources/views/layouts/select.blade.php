@@ -28,7 +28,8 @@
                 onclick="event.preventDefault();
                               document.getElementById('logout-form').submit();">
 
-             <p>森から出る</p></a></li>
+             <p>森から出る</p></a>
+             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;"></li>
         </ul>
     </nav>
 
