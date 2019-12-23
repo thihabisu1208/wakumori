@@ -5935,6 +5935,7 @@ body {
   margin: 0px;
   padding: 0;
   font-size: 62.5%;
+  color: #8D6600;
   font-family: a-otf-ud-shin-maru-go-pr6n, sans-serif;
 }
 
@@ -5944,6 +5945,10 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
+}
+
+p {
+  font-size: 2rem;
 }
 
 .buttons {
@@ -5993,6 +5998,28 @@ h2 {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 0;
+}
+
+#topNav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  height: 10vh;
+  background: #FFEBB7;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+#topNav p {
+  margin: 0 0 0 50px;
+}
+
+#topNav form {
+  position: absolute;
+  right: 3%;
 }
 
 #top {
@@ -6119,5 +6146,81 @@ h2 {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(2, 1fr);
+}
+
+#teacher {
+  margin: 10vh auto 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 5fr;
+}
+
+#teacher #teacherNav {
+  background: #f4eec5;
+  height: 100vh;
+}
+
+#teacher #teacherNav h2 {
+  text-align: center;
+}
+
+#teacherContent {
+  width: 90%;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+#teacherLists {
+  width: 95%;
+}
+
+#teacherLists #teacherDetails {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 2fr;
+}
+
+#teacherLists #teacherDetails i {
+  font-size: 50px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+#teacherLists #teacherDetails p {
+  font-size: 1.3rem;
+}
+
+#studentLists #studentDetails {
+  width: 95%;
+  background: #ffebb7;
+}
+
+#studentLists #studentDetails .student {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid #8D6600;
+}
+
+#studentLists #studentDetails .student i {
+  font-size: 30px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 

@@ -1,0 +1,72 @@
+// Teacher
+#teacher {
+    margin: 10vh auto 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 5fr;
+
+    #teacherNav {
+        background: #f4eec5;
+        height: 100vh;
+
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+#teacherContent {
+    width: 90%;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#teacherLists {
+    width: 95%;
+
+    #teacherDetails {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 2fr;
+
+        i {
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+#studentLists {
+    #studentDetails {
+        width: 95%;
+        background: #ffebb7;
+
+        .student {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px auto;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 2fr;
+            border-bottom: 1px solid $fontColor;
+
+            i {
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
