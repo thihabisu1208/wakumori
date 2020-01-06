@@ -21,7 +21,7 @@
     </head>
     <body>
         <div id="app">
-            <transition name="slide-fade" mode="linear">
+            <transition name="slide-fade">
                 <modal-component class="modal" id="loginModal" :showing="loginModal">
                     <form method="POST" action="{{ route('login') }}" class="modalData">
                         @csrf
@@ -48,7 +48,7 @@
                 </modal-component>
             </transition>
             
-            <transition name="slide-fade" mode="linear">
+            <transition name="slide-fade">
                 <modal-component class="modal" id="loginModal2" :showing="loginModal2">
                     <form method="POST" action="{{ route('login') }}" class="modalData">
                         @csrf
@@ -68,13 +68,12 @@
                                 <span class="contentItem">パスワードを入力してください</span>
                             </label>　
                         </div>
-                        <p class="buttons">
+                        <p class="buttons loginBtn">
                             <input type="submit" value="ログインする" />
                         </p>
                     </form>
                 </modal-component>
             </transition>
-
             <div id="top">
                 <div id="login">
                     <div>

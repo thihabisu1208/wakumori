@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\User;
 
 class SuperAdminController extends Controller
 {
@@ -19,11 +19,21 @@ class SuperAdminController extends Controller
         // $role = Auth::user()->roles->first()->name;
         $teacher = Auth::user();
         // $students = User::all();
-        $roleName = 'teacher';
+        $roleName = 'student';
         $students = User::whereHas('roles', function ($q) use ($roleName) {
             $q->where('name', $roleName);
         })->get();
         
-        return view('superadmin.home', compact(['teacher', 'students']));
+        return view('superadmin.dashboard', compact(['teacher', 'students']));
+    }
+
+    public function game()
+    {
+        return view('superadmin.game');
+    }
+
+    public function tutorial()
+    {
+        return view('superadmin.tutorial');
     }
 }

@@ -25,6 +25,15 @@
             <p>
                 <a style="color: #000; text-decoration: none;" href="{{ url('/teacher') }}">{{ config('app.name', 'Laravel') }}</a>
             </p>
+            <p class="{{ request()->routeIs('teacher.dashboard') ? 'active' : '' }}">
+                <a style="text-decoration: none;" href="{{ url('/teacher') }}">Dashboard</a>
+            </p>
+            <p class="{{ request()->routeIs('teacher.game') ? 'active' : '' }}">
+                <a style="text-decoration: none;" href="{{ url('/teacher/game') }}">Game</a>
+            </p>
+            <p class="{{ request()->routeIs('teacher.tutorial') ? 'active' : '' }}">
+                <a style="text-decoration: none;" href="{{ url('/teacher/tutorial') }}">Tutorial</a>
+            </p>
             <form id="logout-form" action="{{ route('logout') }}" method="POST">
                 @csrf
 
@@ -34,7 +43,7 @@
             </form>
         </div>
 
-        <main class="content">
+        <main class="container" id="teacher">
             @yield('content')
         </main>
     </div>

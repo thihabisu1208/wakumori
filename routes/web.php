@@ -21,7 +21,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/student', 'AdminController@index');
 
-Route::get('/teacher', 'SuperAdminController@index');
+Route::get('/teacher', 'SuperAdminController@index')->name('teacher.dashboard');
+
+Route::get('/teacher/game', 'SuperAdminController@game')->name('teacher.game');
+
+Route::get('/teacher/tutorial', 'SuperAdminController@tutorial')->name('teacher.tutorial');
+
+
+Route::get('/{any?}', function () {
+    return view('welcome');
+})->where('any', '^(?!api\/)[\/\w\.-]*');
 
 // Route::get('/admin', function() {
 //     return 'you are admin';

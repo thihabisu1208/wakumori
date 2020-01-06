@@ -34,6 +34,10 @@ h2{
   font-size: 2.2rem;
 }
 
+h3 {
+  font-size: 2.2rem;
+}
+
 p{
   font-size: 2rem;
 }
@@ -42,7 +46,7 @@ p{
       text-align: center;
       a, input{
         cursor: pointer;
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         background: $buttonColor;
         border: 1px solid $buttonColor;
@@ -121,7 +125,7 @@ p{
   width: 40%;
   border-radius: 10px;
   margin: 20vh auto;
-  padding: 30px 0;
+  padding: 50px 0;
   background: #fff;
 
   .close{

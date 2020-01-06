@@ -5947,6 +5947,10 @@ h2 {
   font-size: 2.2rem;
 }
 
+h3 {
+  font-size: 2.2rem;
+}
+
 p {
   font-size: 2rem;
 }
@@ -5958,7 +5962,7 @@ p {
 .buttons a,
 .buttons input {
   cursor: pointer;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   background: #FFB190;
   border: 1px solid #FFB190;
@@ -6041,7 +6045,7 @@ p {
   width: 40%;
   border-radius: 10px;
   margin: 20vh auto;
-  padding: 30px 0;
+  padding: 50px 0;
   background: #fff;
 }
 
@@ -6148,28 +6152,38 @@ p {
   grid-template-columns: repeat(2, 1fr);
 }
 
-#teacher {
+.container {
   margin: 10vh auto 0;
-  width: 100%;
+  width: 95%;
   height: 100%;
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: 1fr 5fr;
 }
 
-#teacher #teacherNav {
-  background: #f4eec5;
-  height: 100vh;
+img {
+  width: 100%;
 }
 
-#teacher #teacherNav h2 {
+#topNav p {
+  display: -webkit-box;
+  display: flex;
   text-align: center;
 }
 
-#teacherContent {
-  width: 90%;
+#topNav p a {
+  padding-bottom: 5px;
+}
+
+#topNav p.active a {
+  color: #000;
+  border-bottom: 3px solid #000;
+}
+
+.teacherContent {
+  width: 100%;
   display: grid;
-  grid-gap: 50px;
+}
+
+#teacherDashboard {
+  grid-column-gap: 50px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -6182,7 +6196,7 @@ p {
   margin: 0 auto;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 #teacherLists #teacherDetails i {
@@ -6211,7 +6225,6 @@ p {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 2fr;
-  border-bottom: 1px solid #8D6600;
 }
 
 #studentLists #studentDetails .student i {
@@ -6222,5 +6235,113 @@ p {
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
+}
+
+#teacherGames {
+  margin: 10px auto;
+  width: 100%;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#teacherGames .teacherGamesContent {
+  position: relative;
+  cursor: pointer;
+}
+
+#teacherGames .teacherGamesContent:hover .teacherGame.teacherGame1 {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#teacherGames .teacherGamesContent:hover .teacherGame.teacherGame2 {
+  background: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#teacherGames .teacherGamesContent:hover .teacherGame.teacherGame1 .teacherGameContent {
+  opacity: 1;
+}
+
+#teacherGames .teacherGamesContent .teacherGame {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#teacherGames .teacherGamesContent .teacherGame.teacherGame1 {
+  position: relative;
+  background: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  z-index: 1;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+#teacherGames .teacherGamesContent .teacherGame.teacherGame1 .teacherGameContent {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#teacherGames .teacherGamesContent .teacherGame.teacherGame1 .teacherGameContent h3 {
+  width: 70%;
+  margin: 10px auto;
+  border-bottom: 3px solid #8D6600;
+  padding: 0;
+  text-align: center;
+}
+
+#teacherGames .teacherGamesContent .teacherGame.teacherGame2 {
+  position: relative;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+#teacherGames .teacherGamesContent .teacherGame.teacherGame2 .teacherGameContent p {
+  margin: 0 auto 30px;
+  padding: 0;
+}
+
+.modalGameContent {
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.modalGameStudents {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modalGameStudents .modalGameStudent {
+  padding: 20px auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.modalGameStudents .modalGameStudent i {
+  font-size: 25px;
+}
+
+.modalGameStudents .modalGameStudent span {
+  font-size: 1.4rem;
 }
 
