@@ -6024,6 +6024,161 @@ img.selectRisu {
   bottom: 200px;
 }
 
+.gameHeaderContent {
+  position: relative;
+  z-index: 100;
+}
+
+.gameHeaderContent .gameHeader {
+  background-color: #FFEBB7;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+.gameHeaderContent .gameHeader .usagiTitle {
+  float: right;
+  height: 75px;
+  margin: 1.5vh 5vh 0;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.gameHeaderContent .gameHeader .returnBtn {
+  font-size: 2.5rem;
+  background-color: #FFB190;
+  color: #fff;
+  width: 200px;
+  height: 75px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  float: left;
+  margin: 1.5vh 2vh 0;
+}
+
+.gameHeaderContent .gameHeader .moveBtn {
+  font-size: 3rem;
+  background-color: #FFB190;
+  color: #fff;
+  width: 200px;
+  height: 75px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  float: right;
+  margin: 1.5vh 2vh 0;
+}
+
+.orderContent {
+  position: relative;
+}
+
+.orderContent .order {
+  height: 90vh;
+  width: 30vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #FFFDEF;
+  z-index: 50;
+}
+
+.orderContent .order .start {
+  font-size: 3rem;
+  background-color: #FFB190;
+  color: #fff;
+  width: 10vw;
+  height: 75px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 5vh auto 0;
+}
+
+.orderContent .order .arrow {
+  position: relative;
+  margin: 1vh auto;
+  width: 0.5vw;
+  height: 40vh;
+  border-right: 8px solid #000;
+  box-sizing: border-box;
+}
+
+.orderContent .order .arrow::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  right: -17px;
+  border-top: 14px solid #000;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+}
+
+.orderContent .order .end {
+  font-size: 3rem;
+  background-color: #FFB190;
+  color: #fff;
+  width: 10vw;
+  height: 75px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 2vh auto;
+}
+
+.itemContent {
+  position: relative;
+}
+
+.itemContent .itemList {
+  height: 15vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background: #FFFDEF;
+  z-index: 75;
+}
+
+.itemContent .itemList .itemMenu {
+  height: 100%;
+  text-align: center;
+}
+
+.itemContent .itemList .itemMenu .item {
+  text-align: center;
+  width: 9vw;
+  float: left;
+  background-color: #fff;
+}
+
+.itemContent .itemList .itemMenu .item .itemHashigo,
+.itemContent .itemList .itemMenu .item .itemHimo {
+  height: 5vw;
+}
+
 html,
 body {
   margin: 0px;

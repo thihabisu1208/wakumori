@@ -22,7 +22,10 @@
 <body>
     <div id="app">
         <main>
-            @yield('content')
+            @yield('gameHeader')
+            @yield('order')
+            @yield('item')
+            @yield('game')
         </main>
     </div>
 </body>

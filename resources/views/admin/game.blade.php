@@ -1,21 +1,19 @@
 @extends('layouts.game')
 
-@section('content')
-    <div class="container">
+@extends('layouts.gameHeader')
 
-                    {{-- <div class="panel-heading">
-                        Admin Dashboard
-                    </div>
-                    <div class="panel-body">
-                        @if (session('status'))
-                            <div class="alert alert-success">
-                                {{ session('status') }}
-                            </div>
-                        @endif
+@extends('layouts.order')
+{{-- これだけだと表示されない。layout側で@yieldする必要がある --}}
 
-                        This is Admin Dashboard. You must be privileged to be here !
-                    </div> --}}
+@section('game')
+<p>aaa</p>
 
-    </div>
 
+@endsection
+
+
+@extends('layouts.item')
+@section('test')
+
+<p>test test</p>
 @endsection

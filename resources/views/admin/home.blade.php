@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="content">
-<div class="mori"></div>
+        <div class="mori"></div>
+        <a href="/game">
+            <img class="selectUsagi" src="img/yasiUsagi.png" alt="ヤシとウサギ">
+        </a>
+        <img class="selectKuma" src="img/baobabuKuma.png" alt="バオバブとクマ">
 
-<img class="selectUsagi" src="img/yasiUsagi.png" alt="ヤシとウサギ">
-
-<img class="selectKuma" src="img/baobabuKuma.png" alt="バオバブとクマ">
-
-<img class="selectRisu" src="img/bananaRisu.png" alt="バナナとリス">
+        <img class="selectRisu" src="img/bananaRisu.png" alt="バナナとリス">
 
     </div>
 
