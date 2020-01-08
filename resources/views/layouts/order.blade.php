@@ -2,12 +2,13 @@
     <div class="orderContent">
 {{-- 画面左側 --}}
         <div class="order">
-            <p class="start">始まり</p>
+            <div class="makeItem">
+                <p class="orderTitle">作ったもの</p>
+            </div>
 
-            <div class="arrow"></div>
-            <div class="first"></div>
-
-            <p class="end">終わり</p>
+            <div class="selectItem">
+                <p class="orderTitle">選んだもの</p>
+            </div>
         </div>
 
     </div>

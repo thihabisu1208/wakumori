@@ -6,9 +6,11 @@
 {{-- これだけだと表示されない。layout側で@yieldする必要がある --}}
 
 @section('game')
-<p>aaa</p>
+<div class="gameUsagi">
 
+    <img class="usagiGame" src="img/yasiUsagi.png" alt="ヤシとウサギ">  
 
+</div>
 @endsection
 
 

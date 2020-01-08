@@ -6091,62 +6091,37 @@ img.selectRisu {
 .orderContent .order {
   height: 90vh;
   width: 30vw;
+  margin: 0;
   position: fixed;
   left: 0;
   bottom: 0;
   background: #FFFDEF;
   z-index: 50;
+  font-size: 2.5rem;
 }
 
-.orderContent .order .start {
-  font-size: 3rem;
+.orderContent .order .makeItem {
+  height: 45vh;
+}
+
+.orderContent .order .makeItem p.orderTitle {
+  padding: 2vh 0;
+  margin: 0;
+  text-align: center;
   background-color: #FFB190;
   color: #fff;
-  width: 10vw;
-  height: 75px;
-  border-radius: 15px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  margin: 5vh auto 0;
 }
 
-.orderContent .order .arrow {
-  position: relative;
-  margin: 1vh auto;
-  width: 0.5vw;
-  height: 40vh;
-  border-right: 8px solid #000;
-  box-sizing: border-box;
+.orderContent .order .selectItem {
+  height: 45vh;
 }
 
-.orderContent .order .arrow::after {
-  content: "";
-  position: absolute;
-  bottom: -14px;
-  right: -17px;
-  border-top: 14px solid #000;
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-}
-
-.orderContent .order .end {
-  font-size: 3rem;
+.orderContent .order .selectItem p.orderTitle {
+  padding: 2vh 0;
+  margin: 0;
+  text-align: center;
   background-color: #FFB190;
   color: #fff;
-  width: 10vw;
-  height: 75px;
-  border-radius: 15px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  margin: 2vh auto;
 }
 
 .itemContent {
@@ -6155,9 +6130,10 @@ img.selectRisu {
 
 .itemContent .itemList {
   height: 15vh;
-  width: 100vw;
+  width: 70vw;
   position: fixed;
   bottom: 0;
+  right: 0;
   background: #FFFDEF;
   z-index: 75;
 }
@@ -6165,18 +6141,42 @@ img.selectRisu {
 .itemContent .itemList .itemMenu {
   height: 100%;
   text-align: center;
+  margin: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .itemContent .itemList .itemMenu .item {
   text-align: center;
   width: 9vw;
   float: left;
+  margin: 0 10px;
+  border-radius: 15px;
   background-color: #fff;
 }
 
 .itemContent .itemList .itemMenu .item .itemHashigo,
 .itemContent .itemList .itemMenu .item .itemHimo {
   height: 5vw;
+}
+
+.gameUsagi {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: url("/img/mori.png") 100% no-repeat;
+  background-position: bottom;
+  background-size: 130%;
+  z-index: -100;
+}
+
+.gameUsagi .usagiGame {
+  position: absolute;
+  top: 16vh;
+  right: 20vw;
+  width: 30vw;
 }
 
 html,

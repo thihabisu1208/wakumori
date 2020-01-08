@@ -22,4 +22,8 @@ class AdminController extends Controller
         return view('admin.game');
     }
 
+    public function usagi()
+    {
+        return view('admin.usagi');
+    }
 }

@@ -3,7 +3,7 @@
 @section('content')
     <div class="content">
         <div class="mori"></div>
-        <a href="/game">
+        <a href="/usagi">
             <img class="selectUsagi" src="img/yasiUsagi.png" alt="ヤシとウサギ">
         </a>
         <img class="selectKuma" src="img/baobabuKuma.png" alt="バオバブとクマ">

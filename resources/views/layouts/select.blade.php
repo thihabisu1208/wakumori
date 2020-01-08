@@ -24,13 +24,13 @@
     <nav class="selectNav">
         <ul>
             <li class="recordBtn"><img src="/img/record.png" alt="図鑑を見る"></li>
-            {{-- <li class="logoutBtn"><a class="dropdown-item" href="{{ route('logout') }}"
+            <li class="logoutBtn"><a class="dropdown-item" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                               document.getElementById('logout-form').submit();">
 
              <p>森から出る</p></a>
              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf</form></li> --}}
+                @csrf</form></li>
         </ul>
     </nav>
 

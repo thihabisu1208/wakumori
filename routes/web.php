@@ -20,7 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/student', 'AdminController@index');
+
 Route::get('/game', 'AdminController@game');
+
+Route::get('/usagi', 'AdminController@usagi');
 
 Route::get('/teacher', 'SuperAdminController@index');
 
