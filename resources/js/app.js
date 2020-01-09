@@ -39,3 +39,6 @@ const app = new Vue({
         loginModal2: false
   },
 });
+
+
+

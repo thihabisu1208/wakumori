@@ -26,4 +26,14 @@ class AdminController extends Controller
     {
         return view('admin.usagi');
     }
+
+    public function kuma()
+    {
+        return view('admin.kuma');
+    }
+
+    public function risu()
+    {
+        return view('admin.risu');
+    }
 }

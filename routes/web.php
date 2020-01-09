@@ -25,6 +25,10 @@ Route::get('/game', 'AdminController@game');
 
 Route::get('/usagi', 'AdminController@usagi');
 
+Route::get('/kuma', 'AdminController@kuma');
+
+Route::get('/risu', 'AdminController@risu');
+
 Route::get('/teacher', 'SuperAdminController@index');
 
 // Route::get('/admin', function() {

@@ -6,10 +6,14 @@
         <a href="/usagi">
             <img class="selectUsagi" src="img/yasiUsagi.png" alt="ヤシとウサギ">
         </a>
-        <img class="selectKuma" src="img/baobabuKuma.png" alt="バオバブとクマ">
 
-        <img class="selectRisu" src="img/bananaRisu.png" alt="バナナとリス">
+        <a href="/kuma">
+            <img class="selectKuma" src="img/baobabuKuma.png" alt="バオバブとクマ">
+        </a>
 
+        <a href="/risu">
+            <img class="selectRisu" src="img/bananaRisu.png" alt="バナナとリス">
+        </a>
     </div>
 
 @endsection
