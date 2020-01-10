@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\GameUsagi;
+
+
 class AdminController extends Controller
 {
     public function __construct()
@@ -17,14 +20,14 @@ class AdminController extends Controller
         return view('admin.home');
     }
 
-    public function game()
-    {
-        return view('admin.game');
-    }
-
     public function usagi()
     {
-        return view('admin.usagi');
+        // $md = new usagigame();
+        // // データ取得
+        // $data = $md->getData();
+        $usagi = GameUsagi::all();
+        return view('admin.usagi', ['usagi' => $usagi]);
+
     }
 
     public function kuma()

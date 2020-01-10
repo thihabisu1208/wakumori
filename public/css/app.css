@@ -6031,7 +6031,7 @@ img.selectRisu {
 
 .gameHeaderContent .gameHeader {
   background-color: #FFEBB7;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -6051,11 +6051,11 @@ img.selectRisu {
 }
 
 .gameHeaderContent .gameHeader .returnBtn {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   background-color: #FFB190;
   color: #fff;
-  width: 200px;
-  height: 75px;
+  width: 7vw;
+  height: 7vh;
   border-radius: 15px;
   display: -webkit-box;
   display: flex;
@@ -6064,15 +6064,15 @@ img.selectRisu {
   -webkit-box-align: center;
           align-items: center;
   float: left;
-  margin: 1.5vh 2vh 0;
+  margin: 1.5vh 1vh 0;
 }
 
 .gameHeaderContent .gameHeader .moveBtn {
-  font-size: 3rem;
+  font-size: 1.8rem;
   background-color: #FFB190;
   color: #fff;
-  width: 200px;
-  height: 75px;
+  width: 7vw;
+  height: 7vh;
   border-radius: 15px;
   display: -webkit-box;
   display: flex;
@@ -6081,7 +6081,7 @@ img.selectRisu {
   -webkit-box-align: center;
           align-items: center;
   float: right;
-  margin: 1.5vh 2vh 0;
+  margin: 1.5vh 1vh 0;
 }
 
 .orderContent {
@@ -6118,7 +6118,7 @@ img.selectRisu {
 }
 
 .orderContent .order .selectItem p.orderTitle {
-  padding: 2vh 0;
+  padding: 1vh 0;
   margin: 0;
   text-align: center;
   background-color: #FFB190;
@@ -6150,6 +6150,7 @@ img.selectRisu {
 }
 
 .itemContent .itemList .itemMenu .item {
+  list-style-type: none;
   text-align: center;
   width: 9vw;
   float: left;
@@ -6158,8 +6159,7 @@ img.selectRisu {
   background-color: #fff;
 }
 
-.itemContent .itemList .itemMenu .item .itemHashigo,
-.itemContent .itemList .itemMenu .item .itemHimo {
+.itemContent .itemList .itemMenu .item .itemImg {
   height: 5vw;
 }
 
@@ -6175,7 +6175,7 @@ img.selectRisu {
 
 .gameUsagi .usagiGame {
   position: absolute;
-  top: 16vh;
+  top: 13vh;
   right: 20vw;
   width: 30vw;
 }

@@ -1,18 +1,18 @@
 <template>
     <transition name="fade">
-        <div class="overlay" v-if="showing">
-            <slot />
-        </div>
+        <!-- <div class="overlay">
+{{usagi[0].path}}
+        </div> -->
   </transition>
 </template>
 
 <script>
 export default {
   props: {
-    showing: {
-      required: true,
-      type: Boolean
+    usagis:{
+      type: Array
     }
+
   }
 }
 </script>

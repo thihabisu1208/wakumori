@@ -110,7 +110,7 @@ img.selectRisu{
     z-index: 100;
     .gameHeader{
         background-color: #FFEBB7;
-        height: 10vh;
+        height: 8vh;
         width: 100vw;
         position: fixed;
         top: 0;
@@ -124,30 +124,30 @@ img.selectRisu{
             align-items: center;
         }
         .returnBtn{
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             background-color: #FFB190;
             color: #fff;
-            width: 200px;
-            height: 75px;
+            width: 7vw;
+            height: 7vh;
             border-radius: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
             float: left;
-            margin: 1.5vh 2vh 0;
+            margin: 1.5vh 1vh 0;
         }
         .moveBtn{
-            font-size: 3rem;
+            font-size: 1.8rem;
             background-color: #FFB190;
             color: #fff;
-            width: 200px;
-            height: 75px;
+            width: 7vw;
+            height: 7vh;
             border-radius: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
             float: right;
-            margin: 1.5vh 2vh 0;
+            margin: 1.5vh 1vh 0;
 
         }
     }
@@ -180,7 +180,7 @@ img.selectRisu{
         .selectItem{
             height: 45vh;
             p.orderTitle{
-                padding: 2vh 0;
+                padding: 1vh 0;
                 margin: 0;
                 text-align: center;
                 background-color: #FFB190;
@@ -208,13 +208,14 @@ img.selectRisu{
             display: flex;
             align-items: center;
             .item{
+                list-style-type: none;
                 text-align: center;
                 width: 9vw;
                 float: left;
                 margin: 0 10px;
                 border-radius: 15px;
                 background-color: #fff;
-                .itemHashigo, .itemHimo{
+                .itemImg{
                     height: 5vw;
 
                 }
@@ -235,7 +236,7 @@ img.selectRisu{
     z-index: -100;
     .usagiGame{
         position: absolute;
-        top: 16vh;
+        top: 13vh;
         right: 20vw;
         width: 30vw;
     }

@@ -1,14 +1,3 @@
-{{-- @section('usagi')
-    <div class="content">
-<div class="mori"></div>
-
-<img class="usagiGame" src="img/yasiUsagi.png" alt="ヤシとウサギ">
-
-
-
-    </div>
-
-@endsection --}}
 
 @extends('layouts.game')
 
@@ -18,10 +7,26 @@
 {{-- これだけだと表示されない。layout側で@yieldする必要がある --}}
 
 @section('game')
+
+
 <div class="gameUsagi">
+    <div class="itemContent">
 
-    <img class="usagiGame" src="img/yasiUsagi.png" alt="ヤシとウサギ">  
+        {{-- アイテム欄 --}}
 
+
+
+    <img class="usagiGame" src="img/yasiUsagi.png" alt="ヤシとウサギ">
+
+    <div class="itemList">
+        <div class="itemMenu">
+
+            <usagiitem-component :usagis="{{ json_encode($usagi) }}"></usagiitem-component>
+
+    </div>
+</div>
+
+</div>
 </div>
 @endsection
 
